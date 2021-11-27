@@ -12,6 +12,7 @@ import es from './locales/es.json';
 import de from './locales/de.json';
 import th from './locales/th.json';
 import vi from './locales/vi.json';
+import ja from './locales/ja.json';
 
 const INIT_OPTIONS = {
   fallbackLocale: 'en',
@@ -30,7 +31,7 @@ $locale.subscribe((value) => {
   }
 });
 
-const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt', 'tw', 'es', 'de', 'th', 'vi'];
+const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt', 'tw', 'es', 'de', 'th', 'vi', 'ja'];
 addMessages('en', en);
 addMessages('id', id);
 addMessages('ru', ru);
@@ -43,6 +44,7 @@ addMessages('es', es);
 addMessages('de', de);
 addMessages('th', th);
 addMessages('vi', vi);
+addMessages('ja', ja);
 
 export function startClient() {
   let used = 'en';
